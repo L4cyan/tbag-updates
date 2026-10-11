@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project PMU — Dev Mode</title>
+    <!-- ⚠️ THE MYSTERY 404 EVERY PROBE HAS BEEN LOGGING. With no icon declared, browsers ask for
+         /favicon.ico by default, vite has never had one, and the resulting console error rode
+         along in every screenshot driver and battle capture in this repo — close enough to a real
+         failure to keep costing a second look each time. It is one line. -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- ★ landscape + fullscreen when installed to a phone's home screen -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Cinzel is bundled (src/assets/fonts) so the desktop build looks right offline -->
+    <script type="module" crossorigin src="/assets/index-CZUVDRao.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-q6aRWWF1.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
