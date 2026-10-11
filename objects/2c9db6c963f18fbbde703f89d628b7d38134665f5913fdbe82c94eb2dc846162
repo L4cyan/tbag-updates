@@ -1,0 +1,146 @@
+{
+ "lobby_day/festival_banners": {
+  "dur": 150.0,
+  "dead_air_s": 5,
+  "clip": 4e-05,
+  "flat": 0.018,
+  "collapse_db": 7.4,
+  "mean_db": -20.4,
+  "pass": false,
+  "why": [
+   "dead air"
+  ]
+ },
+ "lobby_day/letters_from_home": {
+  "dur": 150.0,
+  "dead_air_s": 0,
+  "clip": 0.0,
+  "flat": 0.009,
+  "collapse_db": -0.5,
+  "mean_db": -18.4,
+  "pass": true,
+  "why": []
+ },
+ "lobby_day/sparring_partners": {
+  "dur": 150.0,
+  "dead_air_s": 0,
+  "clip": 0.0,
+  "flat": 0.032,
+  "collapse_db": 0.5,
+  "mean_db": -16.5,
+  "pass": true,
+  "why": []
+ },
+ "lobby_evening/copper_sunset": {
+  "dur": 150.0,
+  "dead_air_s": 0,
+  "clip": 0.0,
+  "flat": 0.003,
+  "collapse_db": 3.5,
+  "mean_db": -18.5,
+  "pass": true,
+  "why": []
+ },
+ "lobby_evening/last_bell": {
+  "dur": 150.0,
+  "dead_air_s": 6,
+  "clip": 0.0,
+  "flat": 0.002,
+  "collapse_db": -1.7,
+  "mean_db": -36.4,
+  "pass": false,
+  "why": [
+   "dead air"
+  ]
+ },
+ "lobby_evening/tavern_lights_on": {
+  "dur": 150.0,
+  "dead_air_s": 0,
+  "clip": 0.0,
+  "flat": 0.004,
+  "collapse_db": -1.8,
+  "mean_db": -18.3,
+  "pass": true,
+  "why": []
+ },
+ "lobby_morning/bakers_at_dawn": {
+  "dur": 150.0,
+  "dead_air_s": 0,
+  "clip": 0.0,
+  "flat": 0.005,
+  "collapse_db": 1.1,
+  "mean_db": -16.6,
+  "pass": true,
+  "why": []
+ },
+ "lobby_morning/mist_off_the_fields": {
+  "dur": 150.0,
+  "dead_air_s": 3,
+  "clip": 0.0,
+  "flat": 0.007,
+  "collapse_db": -8.2,
+  "mean_db": -30.3,
+  "pass": true,
+  "why": []
+ },
+ "lobby_morning/the_well_rope_creaks": {
+  "dur": 150.0,
+  "dead_air_s": 7,
+  "clip": 0.0,
+  "flat": 0.003,
+  "collapse_db": 7.7,
+  "mean_db": -30.2,
+  "pass": false,
+  "why": [
+   "dead air"
+  ]
+ },
+ "lobby_night/candle_in_the_window": {
+  "dur": 150.0,
+  "dead_air_s": 2,
+  "clip": 2e-05,
+  "flat": 0.006,
+  "collapse_db": -4.1,
+  "mean_db": -22.8,
+  "pass": true,
+  "why": []
+ },
+ "lobby_night/crickets_and_stars": {
+  "dur": 150.0,
+  "dead_air_s": 5,
+  "clip": 0.0,
+  "flat": 0.003,
+  "collapse_db": 7.7,
+  "mean_db": -22.1,
+  "pass": false,
+  "why": [
+   "dead air"
+  ]
+ },
+ "lobby_night/the_watch_changes": {
+  "dur": 150.0,
+  "dead_air_s": 5,
+  "clip": 0.0,
+  "flat": 0.008,
+  "collapse_db": 2.9,
+  "mean_db": -20.8,
+  "pass": false,
+  "why": [
+   "dead air"
+  ]
+ },
+ "sting_defeat/defeat_hollow": {
+  "dur": 14.0,
+  "dead_air_s": 1,
+  "clip": 0.0,
+  "flat": 0.011,
+  "collapse_db": 32.5,
+  "mean_db": -47.7,
+  "pass": false,
+  "why": [
+   "short",
+   "collapses",
+   "near silent"
+  ]
+ }
+}

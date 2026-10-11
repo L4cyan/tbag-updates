@@ -1,0 +1,250 @@
+{
+  "name": "Flat_Biome_V2",
+  "tiles": {
+    "0": "Grass",
+    "1": "Grass var A",
+    "2": "Grass var B",
+    "3": "Grass var C",
+    "4": "Straight Path",
+    "5": "Corner Path",
+    "6": "Pond",
+    "7": "Pond var",
+    "8": "Pond shore top",
+    "9": "Pond shore bottom",
+    "10": "Pond shore left",
+    "11": "Pond shore right",
+    "12": "Pond corner TL",
+    "13": "Pond corner TR",
+    "14": "Pond corner BL",
+    "15": "Pond corner BR",
+    "16": "Oak",
+    "17": "Berry shrub",
+    "18": "Mossy stone",
+    "19": "Broken column",
+    "20": "Wild blooms",
+    "21": "Old stump",
+    "22": "Bloom patch",
+    "23": "Clover",
+    "24": "Tall grass",
+    "25": "Pebbles",
+    "26": "Tall oak",
+    "27": "Birch",
+    "28": "Shade oak",
+    "29": "Bloom shrub"
+  },
+  "rules": {
+    "setpieces_allow": [],
+    "setpiece_roles": {
+      "R": 18,
+      "T": 16,
+      "B": 17,
+      "P": 19
+    },
+    "base": {
+      "weights": {
+        "0": 0.55,
+        "1": 0.15,
+        "2": 0.15,
+        "3": 0.15
+      },
+      "random_rotate": true,
+      "random_flip": true
+    },
+    "path": {
+      "chance": 0.55,
+      "enabled": true,
+      "straight": 4,
+      "straight_base": "vertical",
+      "corner": 5,
+      "corner_base": "SE",
+      "forward_bias": 0.65
+    },
+    "patch": {
+      "enabled": true,
+      "fill": 6,
+      "fill_alt": {
+        "7": 0.4
+      },
+      "edges": {
+        "top": 8,
+        "bottom": 9,
+        "left": 10,
+        "right": 11
+      },
+      "corners": {
+        "tl": 12,
+        "tr": 13,
+        "bl": 14,
+        "br": 15
+      },
+      "count": [
+        1,
+        2
+      ],
+      "size": [
+        4,
+        7
+      ],
+      "arm": 3
+    },
+    "cutout": [
+      16,
+      17,
+      18,
+      20,
+      21,
+      26,
+      27,
+      28,
+      29
+    ],
+    "objects": {
+      "random_flip": true,
+      "scale_jitter": 0.16,
+      "scatter": "groves",
+      "spacing": 2,
+      "grove_gap": 5,
+      "groves": [
+        {
+          "ids": [
+            16,
+            26,
+            28,
+            27
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "decor": [
+            17,
+            29,
+            20,
+            21
+          ],
+          "decorN": [
+            0,
+            2
+          ],
+          "weight": 5
+        },
+        {
+          "ids": [
+            27
+          ],
+          "size": [
+            2,
+            3
+          ],
+          "spread": 1.1,
+          "decor": [
+            20
+          ],
+          "decorN": [
+            0,
+            1
+          ],
+          "weight": 1
+        },
+        {
+          "ids": [
+            17,
+            29
+          ],
+          "size": [
+            2,
+            3
+          ],
+          "spread": 0.9,
+          "decor": [
+            20
+          ],
+          "decorN": [
+            0,
+            1
+          ],
+          "weight": 3
+        },
+        {
+          "ids": [
+            18
+          ],
+          "size": [
+            1,
+            2
+          ],
+          "spread": 1.0,
+          "decor": [
+            20,
+            17
+          ],
+          "decorN": [
+            0,
+            1
+          ],
+          "weight": 1
+        }
+      ],
+      "shore_decor": [
+        20
+      ]
+    },
+    "obstacles": [
+      16,
+      17,
+      18,
+      26,
+      27,
+      28,
+      29
+    ],
+    "wade_tiles": [
+      6,
+      7
+    ],
+    "sway": [
+      16,
+      17,
+      26,
+      27,
+      28,
+      29,
+      20,
+      22,
+      24
+    ],
+    "decor": [
+      20,
+      21,
+      20
+    ],
+    "object_scales": {
+      "16": 2.4,
+      "17": 1.15,
+      "18": 1.3,
+      "19": 1.6,
+      "20": 0.7,
+      "21": 0.9,
+      "26": 2.6,
+      "27": 2.5,
+      "28": 2.4,
+      "29": 1.15
+    },
+    "decals": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "decals_density": 0.22,
+    "walls": [
+      17,
+      17,
+      29,
+      18
+    ],
+    "walls_corner": 16
+  },
+  "grid": "custom",
+  "paint": true
+}

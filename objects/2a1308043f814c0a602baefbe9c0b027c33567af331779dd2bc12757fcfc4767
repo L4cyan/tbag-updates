@@ -1,0 +1,9 @@
+{
+  "name": "Project PMU",
+  "short_name": "PMU",
+  "start_url": "/play",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0b0d12",
+  "theme_color": "#0b0d12"
+}

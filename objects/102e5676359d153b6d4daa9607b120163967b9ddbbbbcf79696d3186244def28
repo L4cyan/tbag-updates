@@ -1,0 +1,89 @@
+{
+  "name": "Flat_Biome",
+  "tiles": {
+    "0": "Grass",
+    "1": "Dirt",
+    "2": "Grass→Dirt",
+    "3": "Water",
+    "4": "Straight Path",
+    "5": "Corner Path",
+    "6": "Bush",
+    "7": "Rocks",
+    "8": "Coastline",
+    "9": "Well",
+    "10": "Sword",
+    "11": "Tree",
+    "12": "Flowers",
+    "13": "Grass Var (smudge)",
+    "14": "Grass Var (weeds)",
+    "15": "Ruin Pillar"
+  },
+  "rules": {
+    "base": {
+      "weights": {
+        "0": 1.0
+      }
+    },
+    "path": {
+      "enabled": true,
+      "straight": 4,
+      "straight_base": "vertical",
+      "corner": 5,
+      "corner_base": "SE",
+      "forward_bias": 0.65
+    },
+    "cutout": [
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      15
+    ],
+    "objects": {
+      "random_flip": true,
+      "scale_jitter": 0.16,
+      "clump_max": 2,
+      "scatter": "isolated",
+      "spacing": 2,
+      "clump_ids": [
+        11
+      ],
+      "clump_chance": 0.12
+    },
+    "obstacles": [
+      6,
+      7,
+      11
+    ],
+    "decor": [
+      9,
+      10,
+      12,
+      15
+    ],
+    "object_scales": {
+      "6": 0.7,
+      "7": 0.82,
+      "9": 0.7,
+      "10": 0.45,
+      "11": 1.15,
+      "12": 0.6,
+      "15": 0.75
+    },
+    "decals": [
+      13,
+      14
+    ],
+    "decals_density": 0.12,
+    "sway": [
+      6,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "grid": "4x4"
+}

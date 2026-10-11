@@ -1,0 +1,73 @@
+{
+  "name": "Lobby_Floor",
+  "kind": "lobby",
+  "tiles": {
+    "0": "Limestone Paved",
+    "1": "Sand Standard",
+    "2": "Grass Base",
+    "3": "Wood Light",
+    "4": "Roof Slate",
+    "5": "Sky/Void",
+    "6": "Grass Clover",
+    "7": "Grass Dirt/Stain",
+    "8": "Limestone Cracked",
+    "9": "Limestone Stained",
+    "10": "Wood Weathered",
+    "11": "Sand Fine",
+    "12": "Roof Dark",
+    "13": "Roof Small-tile",
+    "14": "Stone Brick",
+    "15": "Stone Dark Gray"
+  },
+  "rules": {
+    "sky": 5,
+    "edge": 15,
+    "floor": {
+      "weights": {
+        "2": 1.0
+      },
+      "random_flip": true
+    },
+    "road": {
+      "weights": {
+        "0": 1.0
+      }
+    },
+    "garden": {
+      "weights": {
+        "2": 1.0
+      },
+      "random_flip": true
+    },
+    "sand": {
+      "weights": {
+        "11": 1.0
+      }
+    },
+    "buildings": {
+      "roofs": [
+        4,
+        12,
+        13
+      ],
+      "named": [
+        "Dimensional Portal",
+        "Summoning Altar",
+        "Synthesis Chamber",
+        "Inn"
+      ]
+    },
+    "flatten": [
+      2,
+      6,
+      7
+    ],
+    "greenify": [
+      2,
+      6,
+      7
+    ],
+    "trees": 16
+  },
+  "grid": "4x4"
+}

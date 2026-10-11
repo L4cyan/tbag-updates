@@ -1,0 +1,206 @@
+{
+  "name": "Swamp_Biome",
+  "tiles": {
+    "0": "Moss",
+    "1": "Moss var A",
+    "2": "Moss var B",
+    "3": "Moss var C",
+    "4": "Straight Path",
+    "5": "Corner Path",
+    "6": "Bog pool",
+    "7": "Bog pool var",
+    "8": "Bog shore top",
+    "9": "Bog shore bottom",
+    "10": "Bog shore left",
+    "11": "Bog shore right",
+    "12": "Bog corner TL",
+    "13": "Bog corner TR",
+    "14": "Bog corner BL",
+    "15": "Bog corner BR",
+    "16": "Weeping willow",
+    "17": "Rotted stump",
+    "18": "Headstone",
+    "19": "Broken fence",
+    "20": "Stone cross",
+    "21": "Wisp lantern",
+    "22": "Ghost caps",
+    "23": "Cattails",
+    "24": "Ghost ring",
+    "25": "Fallen leaves",
+    "26": "Puddle",
+    "27": "Roots",
+    "28": "Swamp oak",
+    "29": "Claw snag"
+  },
+  "rules": {
+    "setpieces_allow": [
+      "ruin",
+      "grove"
+    ],
+    "setpiece_roles": {
+      "R": 18,
+      "T": 16,
+      "B": 19,
+      "P": 20,
+      "S": 20,
+      "W": 21
+    },
+    "base": {
+      "weights": {
+        "0": 0.55,
+        "1": 0.15,
+        "2": 0.15,
+        "3": 0.15
+      },
+      "random_rotate": true,
+      "random_flip": true
+    },
+    "path": {
+      "chance": 0.5,
+      "enabled": true,
+      "straight": 4,
+      "straight_base": "vertical",
+      "corner": 5,
+      "corner_base": "SE",
+      "forward_bias": 0.6
+    },
+    "patch": {
+      "enabled": true,
+      "fill": 6,
+      "fill_alt": {
+        "7": 0.4
+      },
+      "edges": {
+        "top": 8,
+        "bottom": 9,
+        "left": 10,
+        "right": 11
+      },
+      "corners": {
+        "tl": 12,
+        "tr": 13,
+        "bl": 14,
+        "br": 15
+      },
+      "count": [
+        2,
+        3
+      ],
+      "size": [
+        4,
+        7
+      ],
+      "arm": 3
+    },
+    "cutout": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      28,
+      29
+    ],
+    "objects": {
+      "random_flip": true,
+      "scale_jitter": 0.14,
+      "scatter": "groves",
+      "spacing": 2,
+      "groves": [
+        {
+          "ids": [
+            16,
+            28,
+            17
+          ],
+          "decor": [
+            22,
+            23
+          ],
+          "weight": 3
+        },
+        {
+          "ids": [
+            18
+          ],
+          "decor": [
+            20,
+            21
+          ],
+          "weight": 2
+        },
+        {
+          "ids": [
+            29,
+            19,
+            17
+          ],
+          "decor": [
+            22
+          ],
+          "weight": 1
+        }
+      ],
+      "shore_decor": [
+        23
+      ]
+    },
+    "obstacles": [
+      16,
+      17,
+      18,
+      19,
+      28,
+      29
+    ],
+    "wade_tiles": [
+      6,
+      7
+    ],
+    "sway": [
+      16,
+      28,
+      23
+    ],
+    "decor": [
+      20,
+      21,
+      22,
+      23,
+      22,
+      23
+    ],
+    "object_scales": {
+      "16": 2.3,
+      "17": 1.15,
+      "18": 1.05,
+      "19": 1.2,
+      "20": 1.1,
+      "21": 1.5,
+      "22": 0.8,
+      "23": 0.95,
+      "28": 2.4,
+      "29": 2.1
+    },
+    "decals": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "decals_density": 0.22,
+    "walls": [
+      19,
+      19,
+      18,
+      17
+    ],
+    "walls_corner": 29
+  },
+  "grid": "custom",
+  "paint": true,
+  "grade": "gloom"
+}
