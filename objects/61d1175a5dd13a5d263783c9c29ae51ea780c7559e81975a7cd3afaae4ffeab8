@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Be A God</title>
+    <!-- ⚠️ THE MYSTERY 404 EVERY PROBE HAS BEEN LOGGING. With no icon declared, browsers ask for
+         /favicon.ico by default, vite has never had one, and the resulting console error rode
+         along in every screenshot driver and battle capture in this repo — close enough to a real
+         failure to keep costing a second look each time. It is one line. -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- ★ landscape + fullscreen when installed to a phone's home screen -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Cinzel is bundled (src/assets/fonts) so the desktop build looks right offline -->
+    <script type="module" crossorigin src="/assets/index-CcxLY7EF.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-1ZXjhUHo.css">
+  </head>
+  <body style="background:#000">
+    <!-- ★ black from the very first frame until the first screen draws (main.tsx removes it): no white page, no
+         half-styled page while the engine loads the save -->
+    <!-- ★ a spinner from the very first frame (Lacyan, 2026-10-11: "the bootup took like 15 secs, have a loading
+         spinning bar to avoid people quitting thinking it's broken"); after 5 s a line says the first launch is slow -->
+    <style>
+      #boot-cover { position: fixed; inset: 0; background: #000; z-index: 2147483647; display: grid; place-items: center; }
+      #boot-cover .bc-ring { width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(240, 207, 134, 0.18);
+        border-top-color: #f0cf86; animation: bc-spin 0.9s linear infinite; }
+      #boot-cover .bc-wrap { display: grid; justify-items: center; gap: 14px; }
+      #boot-cover .bc-text { font: 600 11px/1.4 Georgia, "Times New Roman", serif; letter-spacing: 0.32em; text-transform: uppercase;
+        color: rgba(240, 207, 134, 0.7); }
+      #boot-cover .bc-slow { font: 400 12px/1.4 Georgia, serif; color: rgba(233, 220, 192, 0.55); opacity: 0;
+        animation: bc-in 0.6s ease 5s forwards; text-align: center; padding: 0 24px; }
+      @keyframes bc-spin { to { transform: rotate(360deg); } }
+      @keyframes bc-in { to { opacity: 1; } }
+    </style>
+    <div id="boot-cover"><div class="bc-wrap"><div class="bc-ring"></div><div class="bc-text">Loading</div>
+      <div class="bc-slow">The first launch takes a moment - the world is being prepared.</div></div></div>
+    <div id="root"></div>
+  </body>
+</html>
