@@ -13,8 +13,8 @@
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="mobile-web-app-capable" content="yes" />
     <!-- Cinzel is bundled (src/assets/fonts) so the desktop build looks right offline -->
-    <script type="module" crossorigin src="/assets/index-BzsOB18l.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-B3xIRcRN.css">
+    <script type="module" crossorigin src="/assets/index-BOAAEM0q.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DaekTgzs.css">
   </head>
   <body style="background:#000">
     <!-- ★ black from the very first frame until the first screen draws (main.tsx removes it): no white page, no
