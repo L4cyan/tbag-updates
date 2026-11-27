@@ -13,7 +13,7 @@
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="mobile-web-app-capable" content="yes" />
     <!-- Cinzel is bundled (src/assets/fonts) so the desktop build looks right offline -->
-    <script type="module" crossorigin src="/assets/index-DZ1GXrvQ.js"></script>
+    <script type="module" crossorigin src="/assets/index-DXbvMuPm.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DAwfM01m.css">
   </head>
   <body style="background:#000">
